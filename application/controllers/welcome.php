@@ -8,13 +8,10 @@ class Welcome extends CI_Controller
     public function index()
     {
 
+        $this->layout['content'] = $this->load->view('welcome', [], true);
 
-
-
-        //$html = file_get_contents('https://udn.com/search/tagging/2/%E5%8A%8D%E9%BA%9F');
+        $this->load->view('manage/layout_sidebar-left-static.php', $this->layout);
 
     }
-}
 
-/* End of file welcome.php */
-/* Location: ./application/controllers/welcome.php */
+}
