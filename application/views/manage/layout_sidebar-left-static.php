@@ -9,6 +9,7 @@
   <meta name="description" content="AdminDesigns - A Responsive HTML5 Admin UI Framework">
   <meta name="author" content="AdminDesigns">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="<?php echo base_url('css/style.css'); ?>">
 
   <!-- Font CSS (Via CDN) -->
   <link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700'>
@@ -1160,13 +1161,13 @@
   <!-- BEGIN: PAGE SCRIPTS -->
 
   <!-- jQuery -->
-  <script src="vendor/jquery/jquery-1.11.1.min.js"></script>
-  <script src="vendor/jquery/jquery_ui/jquery-ui.min.js"></script>
+  <script src="<?php echo base_url('theme/vendor/jquery/jquery-1.11.1.min.js'); ?>"></script>
+  <script src="<?php echo base_url('theme/vendor/jquery/jquery_ui/jquery-ui.min.js'); ?>"></script>
 
   <!-- Theme Javascript -->
-  <script src="assets/js/utility/utility.js"></script>
-  <script src="assets/js/demo/demo.js"></script>
-  <script src="assets/js/main.js"></script>
+  <script src="<?php echo base_url('theme/assets/js/utility/utility.js'); ?>"></script>
+  <script src="<?php echo base_url('theme/assets/js/demo/demo.js'); ?>"></script>
+  <script src="<?php echo base_url('theme/assets/js/main.js'); ?>"></script>
   <script type="text/javascript">
   jQuery(document).ready(function() {
 
