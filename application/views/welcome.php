@@ -9,6 +9,7 @@
         <li><a target="_blank" href="https://udn.com/search/tagging/2/<?php echo urlencode($value[0]); ?>">聯合新聞網</a></li>
         <li><a target="_blank" href="https://goodinfo.tw/StockInfo/ShowK_ChartFlow.asp?RPT_CAT=PER&STOCK_ID=<?php echo $value[1]; ?>&CHT_CAT=WEEK">台灣股市資訊網</a></li>
         <li><a target="_blank" href="https://histock.tw/stock/<?php echo $value[1]; ?>/%E6%AF%8F%E8%82%A1%E7%9B%88%E9%A4%98">EPS</a></li>
+        <li><a target="_blank" href="https://www.cmoney.tw/follow/channel/stock-<?php echo $value[1]; ?>?chart=d">CMoney</a></li>
       </ul>
     </div>
     <?php }?>
