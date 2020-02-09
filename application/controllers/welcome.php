@@ -2,7 +2,7 @@
     exit('No direct script access allowed');
 }
 
-class Welcome extends CI_Controller
+class Welcome extends MY_Controller
 {
 
     public function index()
@@ -11,13 +11,13 @@ class Welcome extends CI_Controller
         $data['target'] = [
             ['穩懋', 3105],
             ['麗豐', 4137],
-            ['南寶', 4766],
-            ['百和', 9938],
             ['豐泰', 9910],
-            ['鈺齊-KY', 9802],
-            ['寶成', 9904],
             ['巨大', 9921],
 
+            ['南寶', 4766],
+            ['百和', 9938],
+            ['鈺齊-KY', 9802],
+            ['寶成', 9904],
             ['晶華', 2707],
             ['雲品', 2748],
             ['雄獅', 2731],
@@ -25,7 +25,6 @@ class Welcome extends CI_Controller
             ['美食-KY', 2723],
             ['王品', 2727],
             ['瓦城', 2729],
-
             ['儒鴻', 1476],
             ['佐登', 4190],
             ['欣興', 3037],
