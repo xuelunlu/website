@@ -20,19 +20,19 @@ class MY_Controller extends CI_Controller
         $capsule = new Capsule();
 
         $capsule->addConnection([
-            'driver'    => 'mysql',
+            'driver'    => $db['default']['dbdriver'],
             'host'      => $db['default']['hostname'],
-            'port'      => $db['default']['port'],
+            'database'  => $db['default']['database'],
             'username'  => $db['default']['username'],
             'password'  => $db['default']['password'],
-            'database'  => $db['default']['database'],
             'charset'   => $db['default']['char_set'],
             'collation' => $db['default']['dbcollat'],
+            'port'      => $db['default']['port'],
             'prefix'    => '',
             'options'   => array(
-                PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8",
+                PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES " . $db['default']['char_set'],
             ),
-        ], 'website');
+        ], 'default');
 
         $capsule->setAsGlobal();
         $capsule->bootEloquent();
