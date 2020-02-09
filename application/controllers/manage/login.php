@@ -5,12 +5,15 @@
 class Login extends MY_Controller
 {
 
+    public function submit()
+    {
+
+    }
+
     public function index()
     {
 
-        $this->layout['content'] = ''; //$this->load->view('welcome', $data, true);
-
-        $this->load->view('manage/pages_login.php', $this->layout);
+        $this->load->view('manage/pages_login.php', []);
 
     }
 

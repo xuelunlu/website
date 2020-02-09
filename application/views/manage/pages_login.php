@@ -50,16 +50,16 @@
           <div class="row mb15 table-layout">
 
             <div class="col-xs-6 va-m pln">
-              <a href="dashboard.html" title="Return to Dashboard">
+              <!--<a href="dashboard.html" title="Return to Dashboard">
                 <img src="<?php echo base_url('theme/assets/img/logos/logo_white.png'); ?>" title="AdminDesigns Logo" class="img-responsive w250">
-              </a>
+              </a>-->
             </div>
 
             <div class="col-xs-6 text-right va-b pr5">
               <div class="login-links">
-                <a href="pages_login.html" class="active" title="Sign In">Sign In</a>
+                <!--<a href="pages_login.html" class="active" title="Sign In">Sign In</a>
                 <span class="text-white"> | </span>
-                <a href="pages_register.html" class="" title="Register">Register</a>
+                <a href="pages_register.html" class="" title="Register">Register</a>-->
               </div>
 
             </div>
@@ -73,28 +73,28 @@
                 <i class="fa fa-sign-in"></i>Register</span>
               <div class="section row mn">
                 <div class="col-sm-4">
-                  <a href="#" class="button btn-social facebook span-left mr5 btn-block">
+                  <!--<a href="#" class="button btn-social facebook span-left mr5 btn-block">
                     <span>
                       <i class="fa fa-facebook"></i>
-                    </span>Facebook</a>
+                    </span>Facebook</a>-->
                 </div>
                 <div class="col-sm-4">
-                  <a href="#" class="button btn-social twitter span-left mr5 btn-block">
+                  <!--<a href="#" class="button btn-social twitter span-left mr5 btn-block">
                     <span>
                       <i class="fa fa-twitter"></i>
-                    </span>Twitter</a>
+                    </span>Twitter</a>-->
                 </div>
                 <div class="col-sm-4">
-                  <a href="#" class="button btn-social googleplus span-left btn-block">
+                  <!--<a href="#" class="button btn-social googleplus span-left btn-block">
                     <span>
                       <i class="fa fa-google-plus"></i>
-                    </span>Google+</a>
+                    </span>Google+</a>-->
                 </div>
               </div>
             </div>
 
             <!-- end .form-header section -->
-            <form method="post" action="/" id="contact">
+            <form method="post" action="<?php echo site_url('manage/login/submit'); ?>" id="contact">
               <div class="panel-body bg-light p30">
                 <div class="row">
                   <div class="col-sm-7 pr30">
