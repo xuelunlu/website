@@ -183,6 +183,7 @@
   <!-- BEGIN: PAGE SCRIPTS -->
 
   <!-- jQuery -->
+  <script src="<?php echo site_url('config'); ?>"></script>
   <script src="<?php echo base_url('theme/vendor/jquery/jquery-1.11.1.min.js'); ?>"></script>
   <script src="<?php echo base_url('theme/vendor/jquery/jquery_ui/jquery-ui.min.js'); ?>"></script>
 

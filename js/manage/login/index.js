@@ -21,6 +21,8 @@ $(document).ready(function() {
 
 			} else {
 
+				location.href = site_url + 'manage/account';
+
 			}
 
 		}
