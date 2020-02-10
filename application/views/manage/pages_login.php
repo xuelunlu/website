@@ -144,7 +144,7 @@
 
                   </div>
                   <div class="col-sm-5 br-l br-grey pl30">
-                    <div id="form-alert" class="alert alert-danger" role="alert"></div>
+                    <div style="display: none;" id="form-alert" class="alert alert-danger" role="alert"></div>
                     <h3 class="mb25"> You'll Have Access To Your:</h3>
                     <p class="mb15">
                       <span class="fa fa-check text-success pr5"></span> Unlimited Email Storage</p>

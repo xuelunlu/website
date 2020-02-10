@@ -17,6 +17,12 @@ class Login extends MY_Controller
 
         if ($this->form_validation->run() == true) {
 
+            $this->session->set_userdata('uid', $this->uid);
+
+            $data['status'] = 1;
+
+            echo json_encode($data);
+
         } else {
 
             $data['status'] = 0;
