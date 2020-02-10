@@ -144,6 +144,7 @@
 
                   </div>
                   <div class="col-sm-5 br-l br-grey pl30">
+                    <div id="form-alert" class="alert alert-danger" role="alert"></div>
                     <h3 class="mb25"> You'll Have Access To Your:</h3>
                     <p class="mb15">
                       <span class="fa fa-check text-success pr5"></span> Unlimited Email Storage</p>
@@ -192,6 +193,10 @@
   <script src="<?php echo base_url('theme/assets/js/utility/utility.js'); ?>"></script>
   <script src="<?php echo base_url('theme/assets/js/demo/demo.js'); ?>"></script>
   <script src="<?php echo base_url('theme/assets/js/main.js'); ?>"></script>
+
+  <!-- 其他 -->
+  <script src="<?php echo base_url('js/plugins/jquery.form.min.js'); ?>"></script>
+  <script src="<?php echo base_url('js/manage/login/index.js'); ?>"></script>
 
   <!-- Page Javascript -->
   <script type="text/javascript">
