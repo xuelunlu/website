@@ -4,7 +4,7 @@
 <head>
   <!-- Meta, title, CSS, favicons, etc. -->
   <meta charset="utf-8">
-  <title>AdminDesigns - A Responsive HTML5 Admin UI Framework</title>
+  <title><?php echo isset($title) ? $title : ''; ?></title>
   <meta name="keywords" content="HTML5 Bootstrap 3 Admin Template UI Theme" />
   <meta name="description" content="AdminDesigns - A Responsive HTML5 Admin UI Framework">
   <meta name="author" content="AdminDesigns">
@@ -266,18 +266,18 @@
         <ul class="nav sidebar-menu">
           <li class="sidebar-label pt20">Menu</li>
           <li>
-            <a href="pages_calendar.html">
+            <a href="<?php echo site_url('manage/stock'); ?>">
               <span class="fa fa-calendar"></span>
-              <span class="sidebar-title">Calendar</span>
-              <span class="sidebar-title-tray">
+              <span class="sidebar-title">股票</span>
+              <!--<span class="sidebar-title-tray">
                 <span class="label label-xs bg-primary">New</span>
-              </span>
+              </span>-->
             </a>
           </li>
           <li>
-            <a href="../README/index.html">
+            <a href="<?php echo site_url('welcome'); ?>">
               <span class="glyphicon glyphicon-book"></span>
-              <span class="sidebar-title">Documentation</span>
+              <span class="sidebar-title">資訊</span>
             </a>
           </li>
           <li class="active">
@@ -1001,15 +1001,15 @@
       <div id="topbar-dropmenu">
         <div class="topbar-menu row">
           <div class="col-xs-4 col-sm-2">
-            <a href="#" class="metro-tile">
-              <span class="metro-icon glyphicon glyphicon-inbox"></span>
-              <p class="metro-title">Messages</p>
+            <a href="<?php echo site_url('manage/account'); ?>" class="metro-tile">
+              <span class="metro-icon glyphicon glyphicon-user"></span>
+              <p class="metro-title">Users</p>
             </a>
           </div>
           <div class="col-xs-4 col-sm-2">
             <a href="#" class="metro-tile">
-              <span class="metro-icon glyphicon glyphicon-user"></span>
-              <p class="metro-title">Users</p>
+              <span class="metro-icon glyphicon glyphicon-inbox"></span>
+              <p class="metro-title">Messages</p>
             </a>
           </div>
           <div class="col-xs-4 col-sm-2">
@@ -1041,42 +1041,7 @@
       <!-- End: Topbar-Dropdown -->
 
       <!-- Start: Topbar -->
-      <header id="topbar" class="">
-        <div class="topbar-left">
-          <ol class="breadcrumb">
-            <li class="crumb-active">
-              <a href="dashboard.html">Dashboard</a>
-            </li>
-            <li class="crumb-icon">
-              <a href="dashboard.html">
-                <span class="glyphicon glyphicon-home"></span>
-              </a>
-            </li>
-            <li class="crumb-link">
-              <a href="dashboard.html">Home</a>
-            </li>
-            <li class="crumb-trail">Dashboard</li>
-          </ol>
-        </div>
-        <div class="topbar-right">
-          <div class="ib topbar-dropdown">
-            <label for="topbar-multiple" class="control-label pr10 fs11 text-muted">Reporting Period</label>
-            <select id="topbar-multiple" class="hidden">
-              <optgroup label="Filter By:">
-                <option value="1-1">Last 30 Days</option>
-                <option value="1-2" selected="selected">Last 60 Days</option>
-                <option value="1-3">Last Year</option>
-              </optgroup>
-            </select>
-          </div>
-          <div class="ml15 ib va-m" id="toggle_sidemenu_r">
-            <a href="#" class="pl5">
-              <i class="fa fa-sign-in fs22 text-primary"></i>
-              <span class="badge badge-hero badge-danger">3</span>
-            </a>
-          </div>
-        </div>
-      </header>
+      <?php echo $topbar; ?>
       <!-- End: Topbar -->
 
       <!-- Begin: Content -->

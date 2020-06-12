@@ -10,7 +10,11 @@ class Account extends MY_Controller
     public function index()
     {
 
-        var_export($_SESSION);
+        $this->layout['topbar'] = $this->load->view('manage/account/topbar', [], true);
+
+        $this->layout['content'] = '';
+
+        $this->load->view('manage/layout_sidebar-left-static.php', $this->layout);
 
     }
 
