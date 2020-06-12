@@ -36,6 +36,8 @@ class Node extends MY_Controller
 
         $this->layout['content'] = $this->load->view('manage/node/create', [], true);
 
+        $this->layout['js'] = js_link(base_url('js/manage/node/create.js'));
+
         $this->load->view('manage/layout_sidebar-left-static.php', $this->layout);
 
     }

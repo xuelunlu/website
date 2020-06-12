@@ -1126,6 +1126,7 @@
   <!-- BEGIN: PAGE SCRIPTS -->
 
   <!-- jQuery -->
+  <script src="<?php echo site_url('config'); ?>"></script>
   <script src="<?php echo base_url('theme/vendor/jquery/jquery-1.11.1.min.js'); ?>"></script>
   <script src="<?php echo base_url('theme/vendor/jquery/jquery_ui/jquery-ui.min.js'); ?>"></script>
 
@@ -1133,6 +1134,11 @@
   <script src="<?php echo base_url('theme/assets/js/utility/utility.js'); ?>"></script>
   <script src="<?php echo base_url('theme/assets/js/demo/demo.js'); ?>"></script>
   <script src="<?php echo base_url('theme/assets/js/main.js'); ?>"></script>
+
+  <!-- 其他 -->
+  <script src="<?php echo base_url('js/plugins/jquery.form.min.js'); ?>"></script>
+  <?php echo isset($js) ? $js : ''; ?>
+
   <script type="text/javascript">
   jQuery(document).ready(function() {
 
