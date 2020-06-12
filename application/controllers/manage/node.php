@@ -14,6 +14,12 @@ class Node extends MY_Controller
 
         if ($this->form_validation->run() == true) {
 
+            $node = new \App\Model\Node;
+
+            $node->title = $this->input->post('title', true);
+
+            $node->save();
+
             $data['status'] = 1;
 
             echo json_encode($data);
@@ -47,7 +53,7 @@ class Node extends MY_Controller
 
         $this->layout['topbar'] = $this->load->view('manage/node/topbar', [], true);
 
-        $this->layout['content'] = '';
+        $this->layout['content'] = $this->load->view('manage/node/index', [], true);
 
         $this->load->view('manage/layout_sidebar-left-static.php', $this->layout);
 
