@@ -266,9 +266,9 @@
         <ul class="nav sidebar-menu">
           <li class="sidebar-label pt20">Menu</li>
           <li>
-            <a href="<?php echo site_url('manage/stock'); ?>">
-              <span class="fa fa-calendar"></span>
-              <span class="sidebar-title">股票</span>
+            <a href="<?php echo site_url('manage/node'); ?>">
+              <span class="glyphicon glyphicon-book"></span>
+              <span class="sidebar-title">內容管理</span>
               <!--<span class="sidebar-title-tray">
                 <span class="label label-xs bg-primary">New</span>
               </span>-->
