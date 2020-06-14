@@ -2,6 +2,12 @@
 
 $(document).ready(function() {
 
+	$("#images").change(function() {
+
+		alert('!');
+
+	});
+
 	$("#create-node-form").ajaxForm({
 
 		dataType: 'json',
