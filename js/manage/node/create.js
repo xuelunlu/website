@@ -4,7 +4,34 @@ $(document).ready(function() {
 
 	$("#images").change(function() {
 
-		alert('!');
+		if (this.files.length > 0) {
+
+			var form_data = new FormData();
+
+			for (var i = 0; i < this.files.length; i++) {
+
+				form_data.append('files[]', this.files[i]);
+
+			}
+
+			$.ajax({
+				url: site_url + 'upload',
+				type: 'POST',
+				cache: false,
+				contentType: false,
+				processData: false,
+				data: form_data,
+				dataType: 'json',
+				success: function(data, status, xhr) {
+
+					console.log(data);
+					console.log(status);
+					console.log(xhr);
+
+				}
+			});
+
+		}
 
 	});
 
