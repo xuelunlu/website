@@ -48,12 +48,26 @@ class Node extends MY_Controller
 
     }
 
-    public function index()
+    public function index($offset = 0)
     {
+
+        $this->load->library('pagination');
+
+        $config['base_url']    = site_url('manage/node/index');
+        $config['total_rows']  = \App\Model\Node::count();
+        $config['per_page']    = 10;
+        $config['uri_segment'] = 4;
+        $config['num_links']   = 3;
+
+        $this->pagination->initialize($config);
+
+        $data['links'] = $this->pagination->create_links();
+
+        $data['rows'] = \App\Model\Node::orderBy('nid', 'DESC')->offset($offset)->limit(10)->get();
 
         $this->layout['topbar'] = $this->load->view('manage/node/topbar', [], true);
 
-        $this->layout['content'] = $this->load->view('manage/node/index', [], true);
+        $this->layout['content'] = $this->load->view('manage/node/index', $data, true);
 
         $this->load->view('manage/layout_sidebar-left-static.php', $this->layout);
 

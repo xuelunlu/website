@@ -1,3 +1,4 @@
 vendor/
 application/config/
+logs/
 environment.php

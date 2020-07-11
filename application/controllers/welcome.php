@@ -329,4 +329,17 @@ class Welcome extends MY_Controller
 
     }
 
+    public function us_stocks()
+    {
+
+        $this->layout['topbar'] = '';
+
+        $this->layout['content'] = $this->load->view('us_stocks', [], true);
+
+        $this->layout['title'] = '美股';
+
+        $this->load->view('manage/layout_sidebar-left-static.php', $this->layout);
+
+    }
+
 }

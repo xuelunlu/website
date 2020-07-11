@@ -280,6 +280,12 @@
               <span class="sidebar-title">資訊</span>
             </a>
           </li>
+          <li>
+            <a href="<?php echo site_url('welcome/us_stocks'); ?>">
+              <span class="glyphicon glyphicon-book"></span>
+              <span class="sidebar-title">美股</span>
+            </a>
+          </li>
           <li class="active">
             <a href="dashboard.html">
               <span class="glyphicon glyphicon-home"></span>
