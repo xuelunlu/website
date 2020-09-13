@@ -10,8 +10,137 @@ class Welcome extends MY_Controller
 
         $data['categories'] = [
             [
-                'name'   => '持股5檔',
+                'name'   => '伺服器',
                 'stocks' => [
+                    ['name' => '世芯-KY', 'num' => 3661],
+                    ['name' => '譜瑞-KY', 'num' => 4966],
+                    ['name' => '祥碩', 'num' => 5269],
+                    ['name' => '信驊', 'num' => 5274],
+                    ['name' => '超眾', 'num' => 6230],
+                    ['name' => '雙鴻', 'num' => 3324],
+                    ['name' => '博智', 'num' => 8155],
+                    ['name' => '金像電', 'num' => 2368],
+                    ['name' => '凡甲', 'num' => 3526],
+                    ['name' => '嘉澤', 'num' => 3533],
+                    ['name' => '緯穎', 'num' => 6669],
+                    ['name' => '廣達', 'num' => 2382],
+                    ['name' => '神達', 'num' => 3706],
+                    ['name' => '勤誠', 'num' => 8210],
+                    ['name' => '華擎', 'num' => 3515],
+                    ['name' => '智邦', 'num' => 2345],
+                    ['name' => '良維', 'num' => 6290],
+                ],
+            ],
+            [
+                'name'   => 'iPhone',
+                'stocks' => [
+                    ['name' => '大立光', 'num' => 3008],
+                    ['name' => '玉晶光', 'num' => 3406],
+                    ['name' => '鴻準', 'num' => 2354],
+                    ['name' => '鎧勝-KY', 'num' => 5264],
+                    ['name' => '美律', 'num' => 2439],
+                    ['name' => '新普', 'num' => 6121],
+                    ['name' => '台積電', 'num' => 2330],
+                    ['name' => '日月光投控', 'num' => 3711],
+                    ['name' => '精材', 'num' => 3374],
+                    ['name' => '訊芯-KY', 'num' => 6451],
+                    ['name' => '穩懋', 'num' => 3105],
+                    ['name' => '華通', 'num' => 2313],
+                    ['name' => '臻鼎-KY', 'num' => 4958],
+                    ['name' => '鴻海', 'num' => 2317],
+                    ['name' => '緯創', 'num' => 3231],
+                    ['name' => '和碩', 'num' => 4938],
+                    ['name' => '台郡', 'num' => 6269],
+                ],
+            ],
+            [
+                'name'   => 'NB',
+                'stocks' => [
+                    ['name' => '力致', 'num' => 3483],
+                    ['name' => '雙鴻', 'num' => 3324],
+                    ['name' => '超眾', 'num' => 6230],
+                    ['name' => '鈺太', 'num' => 6679],
+                    ['name' => '瑞昱', 'num' => 2379],
+                    ['name' => '譜瑞-KY', 'num' => 4966],
+                    ['name' => '祥碩', 'num' => 5269],
+                    ['name' => '義隆', 'num' => 2458],
+                    ['name' => '優群', 'num' => 3217],
+                    ['name' => '嘉澤', 'num' => 3533],
+                    ['name' => '宏碁', 'num' => 2353],
+                    ['name' => '華碩', 'num' => 2357],
+                    ['name' => '微星', 'num' => 2377],
+                    ['name' => '技嘉', 'num' => 2376],
+                    ['name' => '茂林-KY', 'num' => 4935],
+                    ['name' => '科嘉-KY', 'num' => 5215],
+                    ['name' => '可成', 'num' => 2474],
+                    ['name' => '聯詠', 'num' => 3034],
+                ],
+            ],
+            [
+                'name'   => '非蘋手機',
+                'stocks' => [
+                    ['name' => '大立光', 'num' => 3008],
+                    ['name' => '聯發科', 'num' => 2454],
+                    ['name' => '神盾', 'num' => 6462],
+                    ['name' => '雙鴻', 'num' => 3324],
+                    ['name' => '聯詠', 'num' => 3034],
+                    ['name' => '敦泰', 'num' => 3545],
+                    ['name' => '矽創', 'num' => 8016],
+                    ['name' => '耕興', 'num' => 6146],
+                    ['name' => '兆利', 'num' => 3548],
+                ],
+            ],
+            [
+                'name'   => 'CIS',
+                'stocks' => [
+                    ['name' => '同欣電', 'num' => 6271],
+                    ['name' => '精材', 'num' => 3374],
+                    ['name' => '晶相光', 'num' => 3530],
+                ],
+            ],
+            [
+                'name'   => '半導體',
+                'stocks' => [
+                    ['name' => '嘉晶', 'num' => 3016],
+                    ['name' => '昇陽半導體', 'num' => 8028],
+                    ['name' => '京元電子', 'num' => 2449],
+                    ['name' => '弘塑', 'num' => 3131],
+                    ['name' => '閎康', 'num' => 3587],
+                    ['name' => '帆宣', 'num' => 6196],
+                    ['name' => '辛耘', 'num' => 3583],
+                    ['name' => '家登', 'num' => 3680],
+                    ['name' => '漢唐', 'num' => 2404],
+                    ['name' => '光罩', 'num' => 2338],
+                ],
+            ],
+            [
+                'name'   => 'Wi-Fi',
+                'stocks' => [
+                    ['name' => '立積', 'num' => 4968],
+                ],
+            ],
+            [
+                'name'   => 'Mini LED',
+                'stocks' => [
+                    ['name' => '晶電', 'num' => 2448],
+                    ['name' => '隆達', 'num' => 3698],
+                    ['name' => '榮創', 'num' => 3437],
+                    ['name' => '億光', 'num' => 2393],
+                    ['name' => '惠特', 'num' => 6706],
+                    ['name' => '久元', 'num' => 6261],
+                    ['name' => '瑞儀', 'num' => 6176],
+                    ['name' => '中光電', 'num' => 5371],
+                    ['name' => '台表科', 'num' => 6278],
+                    ['name' => '群創', 'num' => 3481],
+                    ['name' => '友達', 'num' => 2409],
+                    ['name' => 'GIS-KY', 'num' => 6456],
+                ],
+            ],
+            [
+                'name'   => 'AirPods Pro',
+                'stocks' => [
+                    ['name' => '康控-KY', 'num' => 4943],
+                    ['name' => '新日興', 'num' => 3376],
                 ],
             ],
             [
@@ -21,28 +150,9 @@ class Welcome extends MY_Controller
                     ['name' => '穩懋', 'num' => 3105],
                     ['name' => '聯亞', 'num' => 3081],
                     ['name' => '聯鈞', 'num' => 3450],
-                    ['name' => '亞德客-KY', 'num' => 1590],
                     ['name' => '泰碩', 'num' => 3338],
                     ['name' => '聯茂', 'num' => 6213],
-                ],
-            ],
-            [
-                'name'   => '伺服器',
-                'stocks' => [
-                    ['name' => '緯穎', 'num' => 6669],
-                    ['name' => '信驊', 'num' => 5274],
-                    ['name' => '雙鴻', 'num' => 3324],
-                    ['name' => '神達', 'num' => 3706],
-                    ['name' => '台光電', 'num' => 2383],
-                    ['name' => '金像電', 'num' => 2368],
-                    ['name' => '定穎', 'num' => 6251],
-                    ['name' => '博智', 'num' => 8155],
-                    ['name' => '世芯-KY', 'num' => 3661],
-                    ['name' => '嘉澤', 'num' => 3533],
-                    ['name' => '凡甲', 'num' => 3526],
-                    ['name' => '超眾', 'num' => 6230],
-                    ['name' => '勤誠', 'num' => 8210],
-                    ['name' => '廣達', 'num' => 2382],
+                    ['name' => '網通', 'num' => 2345],
                 ],
             ],
             [
@@ -60,36 +170,6 @@ class Welcome extends MY_Controller
                     ['name' => '信邦', 'num' => 3023],
                     ['name' => '為升', 'num' => 2231],
                     ['name' => '定穎', 'num' => 6251],
-                ],
-            ],
-            [
-                'name'   => 'NB',
-                'stocks' => [
-                    ['name' => '雙鴻', 'num' => 3324],
-                    ['name' => '超眾', 'num' => 6230],
-                    ['name' => '力致', 'num' => 3483],
-                    ['name' => '鈺太', 'num' => 6679],
-                    ['name' => '瑞昱', 'num' => 2379],
-                    ['name' => '義隆', 'num' => 2458],
-                    ['name' => '嘉澤', 'num' => 3533],
-                    ['name' => '優群', 'num' => 3217],
-                    ['name' => '凡甲', 'num' => 3526],
-                    ['name' => '宏碁', 'num' => 2353],
-                    ['name' => '華碩', 'num' => 2357],
-                    ['name' => '微星', 'num' => 2377],
-                    ['name' => '技嘉', 'num' => 2376],
-                    ['name' => '定穎', 'num' => 6251],
-                ],
-            ],
-            [
-                'name'   => '非蘋手機',
-                'stocks' => [
-                    ['name' => '雙鴻', 'num' => 3324],
-                    ['name' => '聯發科', 'num' => 2454],
-                    ['name' => '聯詠', 'num' => 3034],
-                    ['name' => '矽創', 'num' => 8016],
-                    ['name' => '敦泰', 'num' => 3545],
-                    ['name' => '神盾', 'num' => 6462],
                 ],
             ],
             [
@@ -115,17 +195,7 @@ class Welcome extends MY_Controller
             [
                 'name'   => '蘋概股',
                 'stocks' => [
-                    ['name' => '台積電', 'num' => 2330],
-                    ['name' => '穩懋', 'num' => 3105],
-                    ['name' => '大立光', 'num' => 3008],
-                    ['name' => '玉晶光', 'num' => 3406],
                     ['name' => '欣興', 'num' => 3037],
-                    ['name' => '台郡', 'num' => 6269],
-                    ['name' => '良維', 'num' => 6290],
-                    ['name' => '可成', 'num' => 2474],
-                    ['name' => '鴻海', 'num' => 2317],
-                    ['name' => '華通', 'num' => 2313],
-                    ['name' => '康控-KY', 'num' => 4943],
                     ['name' => '新日興', 'num' => 3376],
                 ],
             ],
@@ -229,13 +299,6 @@ class Welcome extends MY_Controller
                 ],
             ],
             [
-                'name'   => '高速傳輸',
-                'stocks' => [
-                    ['name' => '譜瑞-KY', 'num' => 4966],
-                    ['name' => '祥碩', 'num' => 5269],
-                ],
-            ],
-            [
                 'name'   => '網通',
                 'stocks' => [
                     ['name' => '智邦', 'num' => 2345],
@@ -256,7 +319,6 @@ class Welcome extends MY_Controller
                     ['name' => '健鼎', 'num' => 3044],
                     ['name' => '嘉聯益', 'num' => 6153],
                     ['name' => '台虹', 'num' => 8039],
-                    ['name' => '臻鼎-KY', 'num' => 4958],
                 ],
             ],
             [
@@ -288,12 +350,6 @@ class Welcome extends MY_Controller
                     ['name' => '眾達-KY', 'num' => 4977],
                     ['name' => '華星光', 'num' => 4979],
                     ['name' => '光環', 'num' => 3234],
-                ],
-            ],
-            [
-                'name'   => 'CIS',
-                'stocks' => [
-                    ['name' => '同欣電', 'num' => 6271],
                 ],
             ],
             [
@@ -332,11 +388,17 @@ class Welcome extends MY_Controller
     public function us_stocks()
     {
 
+        $data['themes'] = [
+            'iPhone',
+            '美股科技股',
+            '國安基金',
+        ];
+
         $this->layout['topbar'] = '';
 
-        $this->layout['content'] = $this->load->view('us_stocks', [], true);
+        $this->layout['content'] = $this->load->view('us_stocks', $data, true);
 
-        $this->layout['title'] = '美股';
+        $this->layout['title'] = '股市新聞';
 
         $this->load->view('manage/layout_sidebar-left-static.php', $this->layout);
 

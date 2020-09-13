@@ -17,4 +17,6 @@
 	<div class="row">
 		<div class="col-md-12"><input type="submit" name="" value="新增" class="btn btn-default"></div>
 	</div>
+	<div class="row" id="files-area">
+	</div>
 </form>

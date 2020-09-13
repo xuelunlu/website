@@ -1143,6 +1143,7 @@
 
   <!-- 其他 -->
   <script src="<?php echo base_url('js/plugins/jquery.form.min.js'); ?>"></script>
+  <script src="<?php echo base_url('js/plugins/jquery.upload.js'); ?>"></script>
   <?php echo isset($js) ? $js : ''; ?>
 
   <script type="text/javascript">
